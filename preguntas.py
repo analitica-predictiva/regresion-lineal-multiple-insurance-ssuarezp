@@ -18,7 +18,8 @@ def pregunta_01():
     -------------------------------------------------------------------------------------
     """
     # Lea el archivo `insurance.csv` y asignelo al DataFrame `df`
-   df = pd.read_csv(
+    # Lea el archivo `insurance.csv` y asignelo al DataFrame `df`
+    df = pd.read_csv(
         "insurance.csv",
         sep=",",
         thousands=None,
@@ -33,7 +34,6 @@ def pregunta_01():
 
     # Remueva la columna `charges` del DataFrame `X`.
     X.drop(['charges'], axis = 1, inplace = True)
-
 
     # Retorne `X` y `y`
     return X, y
